@@ -1,0 +1,2093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fut</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+    <!--barra-->
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+                <div class="container"><a class="navbar-brand" href="#">Anfa Catemu</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse"
+                        id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Selecciones</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Torneos del año</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Fechas</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Tabla</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Equipos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+<!--Fechas-->
+    <div class="recursos-deportivos" id="top">
+        <script type="text/javascript">function MM_jumpMenu(targ,selObj,restore){eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");if(restore)selObj.selectedIndex=0;}</script>
+        <div class="selector-estaticas" role="navigation">
+        <label for="selectweb">Fechas</label>
+        <select id="selectweb" class="caja-selector" name="menu1" onchange="MM_jumpMenu('parent',this,1)">
+        <option selected="selected">Selecciona la Fecha</option>
+        <option value="#jornada1">Fecha 1</option>
+        <option value="#jornada2">Fecha 2</option>
+        <option value="#jornada3">Fecha 3</option>
+        <option value="#jornada4">Fecha 4</option>
+        <option value="#jornada5">Fecha 5</option>
+        <option value="#jornada6">Fecha 6</option>
+        <option value="#jornada7">Fecha 7</option>
+        <option value="#jornada8">Fecha 8</option>
+        <option value="#jornada9">Fecha 9</option>
+        <option value="#jornada10">Fecha 10</option>
+        <option value="#jornada11">Fecha 11</option>
+        <option value="#jornada12">Fecha 12</option>
+        <option value="#jornada13">Fecha 13</option>
+       
+        </select>
+        </div>
+        <script type="text/javascript">function getElementsByClass(searchClass,node,tag){var classElements=new Array();if(node==null)
+        node=document;if(tag==null)
+        tag='*';var els=node.getElementsByTagName(tag);var elsLen=els.length;var pattern=new RegExp("(^|\\s)"+searchClass+"(\\s|$)");for(var i=0,j=0;i<elsLen;i++){if(pattern.test(els[i].className)){classElements[j]=els[i];j++;}}
+        return classElements;}
+        function cambiaEquipo(e){var obj=window.event?window.event.srcElement:e.target;if(obj.className.indexOf('equipo_')==-1)return false;var node=document.getElementById('contenedorCalendarioInt');var equipos=getElementsByClass('seleccionado',node,'span');for(var i=0;i<equipos.length;++i){equipos[i].className=equipos[i].className.replace('seleccionado','');}
+        equipos=getElementsByClass(obj.className,node,'span');for(var i=0;i<equipos.length;++i){equipos[i].className+=' seleccionado';}}</script>
+        <div class="contenedorCalendarioInt" id="contenedorCalendarioInt" onclick="cambiaEquipo(event)">
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table  class="table" class="jor agendas" class="table table-bordered" cellpadding="0" cellspacing="0" id="jornada1" summary="Todos los resultados de la jornada">
+        <caption>Fecha 1</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <td>Ñilhue</td>
+                        <td>0-0 </td>
+                        <td>Alianza</td>
+                      </tr>
+        <td class="local">
+        <span class="equipo_t185">San Carlos</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t855">Colonia</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t176">Minera</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t177">Peñarol</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t449">Carmelo</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t188">Santa Margarita</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t178">Estrella</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t173">Santa Rosa</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t953">Valencia</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t2894">Union Compuertas</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t184">Arco Iris</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-4</span></td>
+        <td class="visitante">
+        <span class="equipo_t179">Alfredo Riesco</span>
+        </td>
+        </tr>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="table" class="jor agendas" class="table table-bordered"  cellspacing="0" id="jornada2" summary="Todos los resultados de la jornada">
+        <caption>Jornada 2</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <span class="equipo_t1450">Alianza</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t953">Alfredo Riesco</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t957">Union Compuertas</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t188">Arco Iris</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t173">Santa Rosa</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t185">Valencia</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t175">Santa Margarita</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t184">Estrella</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t192">Peñarol</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t178">Carmelo</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t177">Colonia</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t191">Minera</span>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <span class="equipo_t2893">Ñilhue</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-4</span></td>
+        <td class="visitante">
+        <span class="equipo_t186">San Carlos</span>
+        </td>
+        </tr>
+        <tr>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada3" summary="Todos los resultados de la jornada">
+        <caption>Jornada 3</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        <span class="equipo_t1450">Getafe</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t192">Valladolid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        <span class="equipo_t953">Eibar</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t188">R. Sociedad</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        <span class="equipo_t449">Villarreal</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t2893">Girona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        <span class="equipo_t176">Celta</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t175">Atlético</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        <span class="equipo_t186">Real Madrid</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">4-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t957">Leganés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        <span class="equipo_t855">Levante</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t191">Valencia</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        <span class="equipo_t173">Alavés</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t177">Espanyol</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        <span class="equipo_t178">Barcelona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">8-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t2894">Huesca</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        <span class="equipo_t185">Betis</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t179">Sevilla</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        <span class="equipo_t184">Rayo</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t174">Athletic</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada4" summary="Todos los resultados de la jornada">
+        <caption>Jornada 4</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        <span class="equipo_t2894">Huesca</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t184">Rayo</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        <span class="equipo_t175">Atlético</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t953">Eibar</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        <span class="equipo_t188">R. Sociedad</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t178">Barcelona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        <span class="equipo_t191">Valencia</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t185">Betis</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        <span class="equipo_t174">Athletic</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t186">Real Madrid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        <span class="equipo_t957">Leganés</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t449">Villarreal</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        <span class="equipo_t177">Espanyol</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t855">Levante</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        <span class="equipo_t192">Valladolid</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t173">Alavés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        <span class="equipo_t179">Sevilla</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t1450">Getafe</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        <span class="equipo_t2893">Girona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t176">Celta</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada5" summary="Todos los resultados de la jornada">
+        <caption>Jornada 5</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        <span class="equipo_t2894">Huesca</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t188">R. Sociedad</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        <span class="equipo_t184">Rayo</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-5</span></td>
+        <td class="visitante">
+        <span class="equipo_t173">Alavés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        <span class="equipo_t176">Celta</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-3</span></td>
+        <td class="visitante">
+        <span class="equipo_t192">Valladolid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        <span class="equipo_t953">Eibar</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t957">Leganés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        <span class="equipo_t1450">Getafe</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t175">Atlético</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        <span class="equipo_t186">Real Madrid</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t177">Espanyol</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        <span class="equipo_t855">Levante</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-6</span></td>
+        <td class="visitante">
+        <span class="equipo_t179">Sevilla</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        <span class="equipo_t449">Villarreal</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t191">Valencia</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        <span class="equipo_t185">Betis</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t174">Athletic</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        <span class="equipo_t178">Barcelona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t2893">Girona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada6" summary="Todos los resultados de la jornada">
+        <caption>Jornada 6</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        <span class="equipo_t177">Espanyol</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t953">Eibar</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        <span class="equipo_t188">R. Sociedad</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t184">Rayo</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        <span class="equipo_t175">Atlético</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t2894">Huesca</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        <span class="equipo_t174">Athletic</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-3</span></td>
+        <td class="visitante">
+        <span class="equipo_t449">Villarreal</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        <span class="equipo_t957">Leganés</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t178">Barcelona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        <span class="equipo_t179">Sevilla</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t186">Real Madrid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        <span class="equipo_t191">Valencia</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t176">Celta</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        <span class="equipo_t173">Alavés</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t1450">Getafe</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        <span class="equipo_t192">Valladolid</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t855">Levante</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        <span class="equipo_t2893">Girona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t185">Betis</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada7" summary="Todos los resultados de la jornada">
+        <caption>Jornada 7</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        <span class="equipo_t184">Rayo</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t177">Espanyol</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        <span class="equipo_t188">R. Sociedad</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t191">Valencia</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        <span class="equipo_t178">Barcelona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t174">Athletic</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        <span class="equipo_t953">Eibar</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-3</span></td>
+        <td class="visitante">
+        <span class="equipo_t179">Sevilla</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        <span class="equipo_t186">Real Madrid</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t175">Atlético</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        <span class="equipo_t2894">Huesca</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t2893">Girona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        <span class="equipo_t449">Villarreal</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t192">Valladolid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        <span class="equipo_t855">Levante</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t173">Alavés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        <span class="equipo_t185">Betis</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t957">Leganés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        <span class="equipo_t176">Celta</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t1450">Getafe</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada8" summary="Todos los resultados de la jornada">
+        <caption>Jornada 8</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        <span class="equipo_t174">Athletic</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-3</span></td>
+        <td class="visitante">
+        <span class="equipo_t188">R. Sociedad</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        <span class="equipo_t2893">Girona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-3</span></td>
+        <td class="visitante">
+        <span class="equipo_t953">Eibar</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        <span class="equipo_t1450">Getafe</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t855">Levante</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        <span class="equipo_t173">Alavés</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t186">Real Madrid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        <span class="equipo_t957">Leganés</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t184">Rayo</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        <span class="equipo_t192">Valladolid</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t2894">Huesca</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        <span class="equipo_t175">Atlético</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t185">Betis</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        <span class="equipo_t177">Espanyol</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t449">Villarreal</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        <span class="equipo_t179">Sevilla</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t176">Celta</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        <span class="equipo_t191">Valencia</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t178">Barcelona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada9" summary="Todos los resultados de la jornada">
+        <caption>Jornada 9</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        <span class="equipo_t176">Celta</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t173">Alavés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        <span class="equipo_t186">Real Madrid</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t855">Levante</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        <span class="equipo_t191">Valencia</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t957">Leganés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        <span class="equipo_t449">Villarreal</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t175">Atlético</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        <span class="equipo_t178">Barcelona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">4-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t179">Sevilla</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        <span class="equipo_t184">Rayo</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t1450">Getafe</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        <span class="equipo_t953">Eibar</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t174">Athletic</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        <span class="equipo_t2894">Huesca</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t177">Espanyol</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        <span class="equipo_t185">Betis</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t192">Valladolid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        <span class="equipo_t188">R. Sociedad</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t2893">Girona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada10" summary="Todos los resultados de la jornada">
+        <caption>Jornada 10</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        <span class="equipo_t192">Valladolid</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t177">Espanyol</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        <span class="equipo_t2893">Girona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t184">Rayo</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        <span class="equipo_t174">Athletic</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t191">Valencia</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        <span class="equipo_t176">Celta</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">4-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t953">Eibar</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        <span class="equipo_t855">Levante</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t957">Leganés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        <span class="equipo_t175">Atlético</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t188">R. Sociedad</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        <span class="equipo_t1450">Getafe</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t185">Betis</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        <span class="equipo_t178">Barcelona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">5-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t186">Real Madrid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        <span class="equipo_t173">Alavés</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t449">Villarreal</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        <span class="equipo_t179">Sevilla</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t2894">Huesca</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada11" summary="Todos los resultados de la jornada">
+        <caption>Jornada 11</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        <span class="equipo_t957">Leganés</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t175">Atlético</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        <span class="equipo_t186">Real Madrid</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t192">Valladolid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        <span class="equipo_t191">Valencia</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t2893">Girona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        <span class="equipo_t184">Rayo</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-3</span></td>
+        <td class="visitante">
+        <span class="equipo_t178">Barcelona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        <span class="equipo_t953">Eibar</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t173">Alavés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        <span class="equipo_t449">Villarreal</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t855">Levante</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        <span class="equipo_t2894">Huesca</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t1450">Getafe</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        <span class="equipo_t188">R. Sociedad</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t179">Sevilla</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        <span class="equipo_t185">Betis</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-3</span></td>
+        <td class="visitante">
+        <span class="equipo_t176">Celta</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        <span class="equipo_t177">Espanyol</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t174">Athletic</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada12" summary="Todos los resultados de la jornada">
+        <caption>Jornada 12</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        <span class="equipo_t855">Levante</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-3</span></td>
+        <td class="visitante">
+        <span class="equipo_t188">R. Sociedad</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        <span class="equipo_t192">Valladolid</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t953">Eibar</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        <span class="equipo_t1450">Getafe</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t191">Valencia</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        <span class="equipo_t175">Atlético</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t174">Athletic</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        <span class="equipo_t2893">Girona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">0-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t957">Leganés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        <span class="equipo_t173">Alavés</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t2894">Huesca</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        <span class="equipo_t178">Barcelona</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-4</span></td>
+        <td class="visitante">
+        <span class="equipo_t185">Betis</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        <span class="equipo_t184">Rayo</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t449">Villarreal</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        <span class="equipo_t179">Sevilla</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t177">Espanyol</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        <span class="equipo_t176">Celta</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-4</span></td>
+        <td class="visitante">
+        <span class="equipo_t186">Real Madrid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+        <table class="jor agendas" cellpadding="0" cellspacing="0" id="jornada13" summary="Todos los resultados de la jornada">
+        <caption>Jornada 13</caption>
+        <thead>
+        <tr>
+        <th scope="col">Equipo local</th>
+        <th scope="col">Resultado</th>
+        <th scope="col">Equipo visitante</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/957.png" alt="Leganés">
+        </figure>
+        <span class="equipo_t957">Leganés</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t173">Alavés</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/173.png" alt="Alavés">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/953.png" alt="Eibar">
+        </figure>
+        <span class="equipo_t953">Eibar</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t186">Real Madrid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/186.png" alt="Real Madrid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/191.png" alt="Valencia">
+        </figure>
+        <span class="equipo_t191">Valencia</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">3-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t184">Rayo</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="Rayo">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2894.png" alt="Huesca">
+        </figure>
+        <span class="equipo_t2894">Huesca</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-2</span></td>
+        <td class="visitante">
+        <span class="equipo_t855">Levante</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/855.png" alt="Levante">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/175.png" alt="Atlético">
+        </figure>
+        <span class="equipo_t175">Atlético</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t178">Barcelona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/178.png" alt="Barcelona">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/174.png" alt="Athletic">
+        </figure>
+        <span class="equipo_t174">Athletic</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t1450">Getafe</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/1450.png" alt="Getafe">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/179.png" alt="Sevilla">
+        </figure>
+        <span class="equipo_t179">Sevilla</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-0</span></td>
+        <td class="visitante">
+        <span class="equipo_t192">Valladolid</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/192.png" alt="Valladolid">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/177.png" alt="Espanyol">
+        </figure>
+        <span class="equipo_t177">Espanyol</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">1-3</span></td>
+        <td class="visitante">
+        <span class="equipo_t2893">Girona</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/2893.png" alt="Girona">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/449.png" alt="Villarreal">
+        </figure>
+        <span class="equipo_t449">Villarreal</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t185">Betis</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/185.png" alt="Betis">
+        </figure>
+        </td>
+        </tr>
+        <tr>
+        <td class="local">
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/188.png" alt="R. Sociedad">
+        </figure>
+        <span class="equipo_t188">R. Sociedad</span>
+        </td>
+        <td class="resultado"><span class="resultado-partido">2-1</span></td>
+        <td class="visitante">
+        <span class="equipo_t176">Celta</span>
+        <figure>
+        <img src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/176.png" alt="Celta">
+        </figure>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <div class="jornada calendarioInternacional">
+        <div class="cal-agendas calendario">
+        <div class="jornada datos-jornada">
+        <a href="#top" class="ir-arriba">Ir arriba</a>
+</body>
+<div class="footer-basic">
+        <footer>
+            <p class="copyright">Company Name © 2017</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
